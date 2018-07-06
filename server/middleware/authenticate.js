@@ -14,6 +14,8 @@ var authenticate = (req, res, next) => {
     }).catch((e) => {
         res.status(401).send();
     }); 
+    // console.log(req.header('x-auth'));
+    // console.log(req.header('Content-Type'));
 };
 
 module.exports = {authenticate};
